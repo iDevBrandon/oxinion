@@ -4,6 +4,7 @@ import Money from "../../../pages/Money";
 import MyLocal from "../../../pages/MyLocal";
 import Ride from "../../../pages/Ride";
 import Travel from "../../../pages/Travel";
+import logo from "../../../assets/Images/oxinion_logo.png";
 
 const Header = () => {
   return (
