@@ -18,7 +18,11 @@ export const HeaderNav = styled.nav`
 `;
 
 export const NavList = styled.ul`
-  display: flex;
+  display: none;
+  list-style: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const StyledLogo = styled.div`
@@ -32,5 +36,11 @@ export const StyledLogo = styled.div`
   img {
     width: 10%;
     height: 100%;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  @media (min-width: 768px) {
+    display: none;
   }
 `;

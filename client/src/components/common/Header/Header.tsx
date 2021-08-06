@@ -9,7 +9,7 @@ import { FaTimes, FaBars } from "react-icons/fa";
 import { IoApps } from "react-icons/io5";
 import DropDown from "./DropDown/DropDown";
 import Button from "../Button/Button";
-import { HeaderGroup, HeaderNav, NavList, StyledLogo } from "./styles";
+import { HeaderGroup, HeaderNav, NavList, StyledLogo,MobileMenu } from "./styles";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
           </Link>
         </StyledLogo>
 
-        <div onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</div>
+        <MobileMenu onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileMenu>
 
         <NavList>
           <li className="nav-item">About Us</li>
