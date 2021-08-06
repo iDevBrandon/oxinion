@@ -12,30 +12,42 @@ export const HeaderGroup = styled.header`
 export const HeaderNav = styled.nav`
   display: flex;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   justify-content: space-between;
-`;
-
-export const NavList = styled.ul`
-  display: none;
-  list-style: none;
-  @media (min-width: 768px) {
-    display: flex;
-  }
+  margin: 1rem;
 `;
 
 export const StyledLogo = styled.div`
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  width: 50%;
+  width: 100%;
   img {
-    width: 10%;
+    width: 15%;
     height: 100%;
+  }
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+`;
+
+export const NavList = styled.ul`
+  display: none;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 80%;
+    justify-content: inherit;
+  }
+`;
+
+export const SubNav = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
   }
 `;
 
