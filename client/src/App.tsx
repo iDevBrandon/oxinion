@@ -4,6 +4,11 @@ import Home from "./pages/Home";
 import MyLocal from "./pages/MyLocal";
 import Ride from "./pages/Ride";
 import Travel from "./pages/Travel";
+import mapboxgl from "mapbox-gl";
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 function App() {
   return (
