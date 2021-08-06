@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "../MenuItem/MenuItems";
+import { ServiceList } from "./styles";
 
 const DropDown = () => {
   const [click, setClick] = useState(false);
@@ -15,7 +16,7 @@ const DropDown = () => {
       >
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
+            <ServiceList key={index}>
               <Link
                 className={item.cName}
                 to={item.path}
@@ -23,7 +24,7 @@ const DropDown = () => {
               >
                 {item.title}
               </Link>
-            </li>
+            </ServiceList>
           );
         })}
       </ul>

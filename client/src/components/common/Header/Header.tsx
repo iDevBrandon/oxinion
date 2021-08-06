@@ -9,6 +9,7 @@ import { FaTimes, FaBars } from "react-icons/fa";
 import { IoApps } from "react-icons/io5";
 import DropDown from "./DropDown/DropDown";
 import Button from "../Button/Button";
+import { HeaderGroup, HeaderNav, NavList, StyledLogo } from "./styles";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -21,15 +22,17 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <nav>
-        <Link to="/" className="logo">
-          OXINION(logo)
-        </Link>
+    <HeaderGroup>
+      <HeaderNav>
+        <StyledLogo>
+          <Link to="/" className="logo">
+            <img src={logo} alt="OXINION_logo" />
+          </Link>
+        </StyledLogo>
 
         <div onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</div>
 
-        <ul>
+        <NavList>
           <li className="nav-item">About Us</li>
           <li className="nav-item">Events</li>
           <li className="nav-item">Location</li>
@@ -39,22 +42,11 @@ const Header = () => {
             Services
             {dropdown && <DropDown />}
           </li>
-          {/* <li className="nav-links">
-            <Link to="/mylocal">MyLocal</Link>
-          </li>
-          <li>
-            <Link to="/travel">Travel</Link>
-          </li>
-          <li>
-            <Link to="/ride">Ride</Link>
-          </li>
-          <li>
-            <Link to="/money">money</Link>
-          </li> */}
+
           <li className="nav-item">Log In</li>
           <Button />
-        </ul>
-      </nav>
+        </NavList>
+      </HeaderNav>
 
       <Switch>
         <Route path="/mylocal">
@@ -70,7 +62,7 @@ const Header = () => {
           <Money />
         </Route>
       </Switch>
-    </header>
+    </HeaderGroup>
   );
 };
 
