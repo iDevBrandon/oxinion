@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Route, Link } from "react-router-dom";
-import Money from "../../../pages/Money";
-import MyLocal from "../../../pages/MyLocal";
-import Ride from "../../../pages/Ride";
-import Travel from "../../../pages/Travel";
+import { Link } from "react-router-dom";
 import logo from "../../../assets/Images/oxinion_logo.png";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { IoApps } from "react-icons/io5";
@@ -47,31 +43,18 @@ const Header = () => {
             <li className="nav-item">Events</li>
             <li className="nav-item">Location</li>
           </SubNav>
-          <li className="nav-item" onClick={handleService}>
-            <IoApps />
-            Services
-            {dropdown && <DropDown />}
-          </li>
+          <SubNav>
+            <li className="nav-item" onClick={handleService}>
+              <IoApps />
+              Services
+              {dropdown && <DropDown />}
+            </li>
 
-          <li className="nav-item">Log In</li>
-          <Button />
+            <li className="nav-item">Log In</li>
+            <Button />
+          </SubNav>
         </NavList>
       </HeaderNav>
-
-      <Switch>
-        <Route path="/mylocal">
-          <MyLocal />
-        </Route>
-        <Route path="/travel">
-          <Travel />
-        </Route>
-        <Route path="/ride">
-          <Ride />
-        </Route>
-        <Route path="/Money">
-          <Money />
-        </Route>
-      </Switch>
     </HeaderGroup>
   );
 };

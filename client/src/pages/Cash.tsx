@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "../components/common/Header/Header";
 
-const Money = () => {
+const Cash = () => {
   return (
     <div>
+      <Header />
       <small>Toss walking tracking app</small>
       <p>business: upload missions</p>
       <p>user: make some real $$$ to withdraw</p>
@@ -10,4 +12,4 @@ const Money = () => {
   );
 };
 
-export default Money;
+export default Cash;

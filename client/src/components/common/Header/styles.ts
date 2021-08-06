@@ -30,7 +30,7 @@ export const StyledLogo = styled.div`
     height: 100%;
   }
   @media (min-width: 768px) {
-    width: 50%;
+    width: 25%;
   }
 `;
 

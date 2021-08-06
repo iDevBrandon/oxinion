@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/common/Header/Header";
 
 const Ride = () => {
-    return (
-        <div>
-            <p>Refer Uber</p>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Header />
+      <p>Refer Uber</p>
+    </div>
+  );
+};
 
-export default Ride
+export default Ride;
