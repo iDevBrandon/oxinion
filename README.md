@@ -2,9 +2,9 @@
 
 4 functionalities : MyLocal, Travel, Ride & Money
 
-MyLocal : Megaphone
+MyLocal : Megaphone/events/Local deals
 
-Travel : 
+Travel : Other 3rd party travel apps
 
 Ride : For RoboTaxi
 
