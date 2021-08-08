@@ -2,6 +2,14 @@
 
 4 functionalities : MyLocal, Travel, Ride & Money
 
+MyLocal : Megaphone
+
+Travel : 
+
+Ride : For RoboTaxi
+
+Money : like lost&found game or mission by ad provider
+
 nextdoor/Yelp/AirBnB/icbox.info/Robotaxi
 
 ## User story
