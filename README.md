@@ -24,3 +24,11 @@ Money is a service werhe users can make money by conducting the missions
 
 mylocal & travel share the same UI but provide different contents
 ![231905121_4183777671740007_1771131993846781638_n](https://user-images.githubusercontent.com/40842018/128631702-f02c6dc2-9d93-4db3-9908-8062d1affb90.jpg)
+
+## App structure
+
+### Internal vs External APIs
+
+Internal : Signup/Signin/logout/profile
+
+External : business info/events/catergory/attractions
