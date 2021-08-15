@@ -34,7 +34,7 @@ Internal : Signup/Signin/logout/profile
 External : business info/events/catergory/attractions
 
 ## BM (Business Model)
-Mobility : Moovit
+Mobility : Moovit, facedrive
 Car Sharing: Uber,Lyft
 Navigation : Mapbox
 Self-driving(RoboTaxi) : Tesla
