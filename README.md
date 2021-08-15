@@ -32,3 +32,9 @@ mylocal & travel share the same UI but provide different contents
 Internal : Signup/Signin/logout/profile
 
 External : business info/events/catergory/attractions
+
+## BM (Business Model)
+Mobility : Moovit
+Car Sharing: Uber,Lyft
+Navigation : Mapbox
+Self-driving(RoboTaxi) : Tesla
