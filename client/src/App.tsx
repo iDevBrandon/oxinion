@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MyLocal from "./pages/MyLocal";
-import Ride from "./pages/Ride";
+import Ride from "./pages/Ride/Ride";
 import Travel from "./pages/Travel";
 import mapboxgl from "mapbox-gl";
 
