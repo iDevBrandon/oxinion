@@ -1,6 +1,13 @@
 import React from "react";
 import Header from "../../components/common/Header/Header";
-import { FeaturesContainer, FeatureTab, RideFeatures } from "./styles";
+import {
+  AppPromotion,
+  FeatureContent,
+  FeaturesContainer,
+  FeatureTab,
+  RideFeatures,
+  ServiceContent,
+} from "./styles";
 import { FaCar } from "react-icons/fa";
 
 const Ride = () => {
@@ -41,7 +48,7 @@ const Ride = () => {
         </FeaturesContainer>
 
         <div className="features">
-          <div className="features__content features__content--1 features__content--active">
+          <FeatureContent className="features__content features__content--1 features__content--active">
             <h1>Go anywhere</h1>
             <input
               type="text"
@@ -60,8 +67,8 @@ const Ride = () => {
                 className="form__btn"
               />
             </a>
-          </div>
-          <div className="features__content features__content--2">
+          </FeatureContent>
+          <FeatureContent className="features__content features__content--2">
             <h1>Pay anytime with Visa</h1>
             <p>
               Samurai heart. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -73,8 +80,8 @@ const Ride = () => {
               value="Hire a RoboTaxi"
               className="form__btn"
             />
-          </div>
-          <div className="features__content features__content--3">
+          </FeatureContent>
+          <FeatureContent className="features__content features__content--3">
             <h1>Get a dev job</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -88,8 +95,8 @@ const Ride = () => {
               value="Hire a RoboTaxi"
               className="form__btn"
             />
-          </div>
-          <div className="features__content features__content--4">
+          </FeatureContent>
+          <FeatureContent className="features__content features__content--4">
             <h1>Be loved</h1>
             <p>
               consectetur adipisicing elit. Aspernatur, eos. Illum rem
@@ -101,9 +108,79 @@ const Ride = () => {
               value="Hire a RoboTaxi"
               className="form__btn"
             />
-          </div>
+          </FeatureContent>
         </div>
       </RideFeatures>
+
+      {/* <!-- service content --> */}
+      <ServiceContent>
+        <div className="tesla__services__content">
+          <div className="content--text">
+            <h2 className="content__header content__1">
+              Anywhere, anyplace & anytime
+            </h2>
+            <p className="content__paragraph">
+              Learn about your Tesla ownership experience – including designing
+              and taking delivery of your car.
+            </p>
+            <div className="content__list">
+              <a href="a">Request a ride</a>
+              <a href="a">Discover your food</a>
+              <a href="a">Activate Fully Autonomous Mode</a>
+              <a href="a">Find us</a>
+            </div>
+          </div>
+          <div className="content--img">
+            <img src="./img/service-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div className="tesla__services__content">
+          <div className="content--text">
+            <h2 className="content__header">Getting Started</h2>
+            <p className="content__paragraph">
+              Learn about your Tesla ownership experience – including designing
+              and taking delivery of your car.
+            </p>
+            <div className="content__list">
+              <a href="a">Tesla RoboTaxi</a>
+              <a href="a">Waymo</a>
+              <a href="a">Uber</a>
+              <a href="a">Lyft</a>
+            </div>
+          </div>
+          <div className="content--img">
+            <img src="./img/service-2.jpg" alt="" />
+          </div>
+        </div>
+      </ServiceContent>
+
+      {/* Promote for app download  */}
+      <AppPromotion>
+        <div className="promote--intro">
+          <h2>Tesla App Support</h2>
+          <p>
+            Download the Tesla app for iPhone and Android to control and
+            remotely monitor your Tesla products. You can access features. Use
+            your Tesla Account credentials to login.
+          </p>
+          <div className="promote--intro--store">
+            <a href="https://apps.apple.com/us/app/tesla-model-s/id582007913">
+              <img
+                className="ios-app"
+                src="../../assets/Images/app-store.png"
+                alt=""
+              />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.teslamotors.tesla&hl=en">
+              <img className="android-app" src="./img/google-play.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div className="promote--app">
+          <img src="./img/app-hero.jpg" alt="" className="promote--app--img" />
+        </div>
+      </AppPromotion>
     </div>
   );
 };

@@ -33,3 +33,48 @@ export const FeatureTab = styled.li`
     display: inline-block;
   }
 `;
+
+export const FeatureContent = styled.div`
+  display: none;
+  //  display: inline;
+  margin: 1rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .ride--form {
+    width: 100%;
+    margin: 0 auto;
+    background: #f6f6f6;
+    border: 1px solid #eee;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2.5rem;
+    @media (min-width: 600px) {
+      display: flex;
+      align-items: center;
+      width: 90%;
+    }
+  }
+`;
+
+// service content
+export const ServiceContent = styled.section`
+  display: grid;
+  gap: 5rem;
+`;
+
+// app promotion
+export const AppPromotion = styled.section`
+  width: 100%;
+  background-color: #afccf8;
+
+  @media (min-width: 600px) {
+    .promote {
+      display: flex;
+    }
+  }
+`;
